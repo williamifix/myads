@@ -1,38 +1,619 @@
-.App {
-  text-align: center;
+
+
+html{
+  margin: 0px;
+  padding: 0px;
+  box-sizing: border-box;
+  font-size: 16px;
+  
+ 
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+
+
+
+.navbar{
+  width: 100vw;
+  height: 5rem;
+  background-color: #072326;
+  position: fixed;
+  top: 0px;
+  z-index: 10;
+  display: flex;
+  justify-content: center;
+  box-sizing: border-box;
+  /* box-shadow: 1px 1px 1px rgb(164, 111, 5); */
+}
+.nav{
+width: 90%;
+height: 5rem;
+position: relative;
+display: flex;
+align-items: center;
+justify-content: space-between;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+
+.nav ul {
+float: right;
+display: flex;
+gap: 1rem;
+justify-content: center;
+align-items: center;
+flex-direction: row;
+
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+
+
+.navbar .showMenu {
+  display: none;
+  position: absolute;
+  right: 0rem;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+.showMenu{
+  width: 3rem;
+  height: 3rem;
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 0.3rem;
+
+}
+
+.showMenu div{
+  width: 2.5rem;
+  height: 0.2rem;
+  background-color: rgb(255, 170, 0);
+  border-radius: 0.3rem;
+}
+
+.hideMenu{
+  width: 3rem;
+  height: 3rem;
+  position: absolute;
+  right: 0rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 0.3rem;
+}
+.hideMenu div{
+  width: 2.5rem;
+  height: 0.2rem;
+  border-radius: 0.3rem;
+}
+.hideMenu :nth-child(even){
+display: none;}
+.hideMenu :nth-child(odd) {
+  background-color: rgb(255, 170, 0);
+}
+.hideMenu :nth-child(1){
+  transform: rotate(-30deg);
+}
+.hideMenu :nth-child(3){
+  transform: rotate(30deg);
+}
+
+
+
+
+
+.hideMenuIcon {
+  display: none;
+}
+
+
+
+
+li{
+  list-style: none;
+}
+.link {
+  color: white;
+  text-decoration: none;
+ 
+}
+.link:hover{
+  color: rgb(197, 127, 5);
+}
+.nav .active{
+  color: rgb(197, 127, 5);
+  font-weight: bold;
+}
+button{
+  padding: 1.3rem;
+  border-width: 0rem;
+  border-radius: 0.4rem;
+  background-color: rgb(164, 111, 5);
+  font-weight: bolder;
+  position: relative;
+  color: white;
+}
+
+button:hover {
+  background-color: rgb(166, 133, 11);
+  transition: 0.3s;
+}
+
+
+
+
+
+
+
+
+
+
+.contentLoader{
+  position: relative;
+  background-color: #072326; 
+  display: flex;
+}
+.homeContainer {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+}
+.Home {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  width: 100%;
+}
+.homePallet{
+  width: 100%;
+  height: calc(15rem + 30vmin);
+  background-image: url('../asset/images/programmatic-advertising-1-630f56a4c8720-sej-1280x720.webp');
+  background-repeat: no-repeat;
+  background-size: cover;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.homeFeatures{
+  position: relative;
+  width: inherit;
+  height: 100%;
+  z-index: 4;
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: center;
-  font-size: calc(10px + 2vmin);
+}
+.overlay {
+  position: absolute;
+  width: 100%;
+  height: inherit;
+  background-color: rgb(17, 43, 46,0.3);
+  backdrop-filter: blur(2px);
+  z-index: 3;
+}
+
+h1{
+  text-align: center;
+  font-size: 3rem;
+  color: rgb(255, 255, 255);
+}
+
+h2{
+  color: rgb(255, 170, 0);
+  font-size: 1.5rem;
+
+}
+h3{
+  color: rgb(255, 170, 0);
+  font-size: 1rem;
+}
+
+hr{
+  border: 1px solid red;
+
+}
+
+.searchBar {
+  width: 70%;
+  height: 3.5rem;
+  display: flex;
+  justify-content: space-between;
+  padding-inline: 0.5rem;
+  align-items: center;
+  background-color: #072326;
+  border-radius: 0.5rem;
+  border: 1px solid rgb(255, 255, 255);
+}
+
+.searchBar input {
+  height: 2.5rem;
+  width: 100%;
+  border-radius: 0.5rem;
+  border-width: 0;
+  padding-inline: 1rem;
+  font-size: 1rem;
+}
+.searchBar input:focus{
+  outline-width: 0px;
+
+}
+
+.searchBar h4{
   color: white;
+  padding-left: 1rem;
+  font-size: 1.2rem;
+  
 }
 
-.App-link {
-  color: #61dafb;
+
+.categoryListing {
+  width: 100%;
+  height: 10.3rem;
+  display: flex;
+  flex-direction: column;
+  /* padding-inline: 1rem; */
+  padding-bottom: 0.5rem;
+  box-sizing: border-box;
+  margin-bottom: 1rem;
+  position: sticky;
+  top: 5rem;
+  background-color: #112b2e;
+  z-index: 9;
+  /* border: 1px solid rgb(255, 170, 0); */
+  transition: 0.5s;
+
+
+}
+.categoryListing .heading {
+  background-color: rgb(164, 111, 5);
+  width: 100%;
+  height: 2.5rem;
+  margin-bottom: 0.5rem;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding-inline: 1rem;
+  box-sizing: border-box;
+  color: #ffffff;
+}
+.categoryListing .heading h3{
+  color: #fdfdfd;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
+.categoryListing span {
+  font-size: 2rem;
+  font-weight: bolder;
+  height: inherit;
+  cursor: pointer;
+  box-sizing: border-box;
+}
+
+.category{
+  width: 100%;
+  height: 7rem;
+  display: flex;
+  overflow-x: scroll;
+  overflow-y: hidden;
+  
+}
+
+.categoryListing::-webkit-scrollbar {
+  display: none;
+}
+.category::-webkit-scrollbar {
+  background-color: rgb(197, 127, 5);
+  height: 4px;
+}
+.category::-webkit-scrollbar-thumb {
+  background-color: rgb(90, 113, 116);
+  height: 2rem;
+}
+
+.cardItem{
+  width: 100px;
+  height: 100px;
+  border-radius: 5px;
+  color: white;
+  padding-inline: 1rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 0px;
+}
+.cardItem p {
+  padding: 0px;
+  top: 0px;
+}
+
+.categoryImage {
+  width: 3rem;
+  height: 3rem;
+  border-radius: 50%;
+  border: 1px solid rgb(255, 170, 0) ;
+  box-shadow: 1px 1px 5px black;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+}
+.categoryImage:hover{
+  border: 2px solid rgb(255, 170, 0);
+  box-shadow: 1px 1px 5px rgba(255, 170, 0.5);
+  transition: 0.3s;
+  
   }
-  to {
-    transform: rotate(360deg);
+
+.imgContainer {
+  width: 200px;
+  height: 200px;
+  border: rgb(255, 170, 0) 1px solid;
+  align-self: center;
+  border-radius: 5px;
+}
+
+.lastestListing{
+  max-height: auto;
+  overflow-x: hidden;
+  align-self: center;
+  color: white;
+  border-radius: 5px;
+  padding: 0px 20px;
+  margin-bottom: 10px;
+  display: flex;
+  flex-direction: column;
+  position: relative;
+}
+.lastestListing h2{
+  position: sticky;
+  background-color: #112b2e ;
+  width: inherit;
+  top: 0px;
+  right: 0px;
+  left: 0px;
+  padding: 20px;
+  border-bottom: 1px solid rgb(255, 170, 0,0.3);
+}
+
+.item{
+  min-width: inherit;
+  display:  flex;
+  flex-direction: row;
+  color: white;
+  gap: 20px;
+  border-bottom: 1px solid rgb(255, 255, 255,0.1);
+  padding-bottom: 10px;
+  margin-bottom: 20px;
+
+}
+
+.itemDetails{
+  width: auto;
+  height: auto;
+}
+
+.aboutUs {
+  /* background-color: red; */
+  max-width: 1200px;
+  align-self: center;
+  margin-top: 20rem;
+}
+.aboutUs p{
+  width: 400px;
+  font-size: 1.5rem;
+  text-align: center;
+  color: rgb(255, 170, 0);
+}
+
+.aboutUs >div{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 10rem;
+  margin-bottom: 10rem;
+  flex-wrap: wrap;
+}
+
+.aboutUs >div .shape{
+    width: 200px;
+    height: 400px;
+    background-color: white;
+    
+
+}
+
+
+.foot {
+  width: 100%;
+   height: auto;
+  background-color: #072326 ;
+  color: white;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+  border-top: 1px solid rgb(111, 94, 94);
+}
+
+.footerCategories {
+  height: auto;
+  padding: 1rem;
+  color: white;
+  display: flex;
+  justify-content: space-between;
+  border-bottom: white solid 2px;
+  flex-wrap: wrap;
+}
+
+.footerCategories > div{
+  height: 7rem;
+  width: 200px;
+  margin: 10px;
+  color: white;
+  padding: 1rem;
+  display: flex;
+  flex-direction: column;
+}
+
+.foot ul {
+  margin: 0;
+  padding: 0;
+}
+
+
+
+
+
+
+
+
+/* this is for the login page  */
+.Login{
+  background-color: #112b2e;
+  color: white;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 100vw;
+  height: auto;
+  padding-top: 80px;
+  /* padding-bottom: 100px; */
+  /* border: 1px solid; */
+  overflow: hidden;
+  box-sizing: border-box;
+  position:  relative;
+
+}
+.signInPallet{
+  width: 80vw;
+  max-width: 600px;
+  margin-inline: auto;
+  height: inherit;
+  /* background-color: red; */
+  display: flex;
+  /* align-items: center; */
+  flex-direction: column;
+  box-sizing: border-box;
+
+
+}
+
+form{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin-inline: auto;
+  width: 100%;
+  /* padding: 10px; */
+  border-radius: 10px;
+  /* background-color: aqua; */
+  
+}
+form input{
+  border-radius: 5px;
+  width: 90%;
+  border: 0px;
+  margin-bottom: 1rem;
+  height: 55px;
+  padding-inline: 10px;
+  box-sizing: border-box;
+  background-color: rgb(186, 189, 158,0.2);
+  color: rgb(221, 168, 104);
+  outline-offset: 1px;
+ 
+}
+input:focus {
+  outline-color: rgb(255, 170, 0);
+  outline-width: 1px;
+}
+input::placeholder{
+  color: rgb(198, 197, 186);
+}
+input::-moz-focus-inner{
+  border: 0px;
+}
+form button {
+  width: 90%;
+}
+form h4{
+  width: 90%;
+  color: rgb(255, 170, 0);
+
+
+}
+.Login p{
+  text-align: center;
+  color: rgb(255, 170, 0);
+}
+
+
+
+
+
+
+
+
+
+@media screen  and (max-width: 696px){
+  html{
+    font-size: 16px;
   }
+  .navbar{
+    border-bottom: 1px solid rgb(255, 170, 0);
+    height: 60px;
+
+  }
+  .nav{
+    height: 60px;
+    
+  }
+
+  .nav ul {
+    background-color: #072326;
+    position: fixed;
+    height: 20rem;
+    width: 100%;
+    padding:  0px;
+    left: 0px;
+    top: 43px;
+    display: inline-flex;
+    align-items: center;
+    flex-direction: column;
+    justify-content: center;
+    /* overflow: scroll; */
+    border-bottom: 1px solid rgb(255, 170, 0);
+    transition: 0.5s;
+  
+  }
+  .nav ul li {
+    margin-bottom: 1rem;
+  }
+ 
+  .nav .showMenu {
+    display: flex;
+  }
+
+  .categoryListing{
+    top: 60px;
+  }
+
 }
