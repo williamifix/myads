@@ -1,7 +1,7 @@
 import logo from './logo.svg';
 import './App.css';
 
-import { BrowserRouter as Router,Switch, Routes, Route } from 'react-router-dom';
+import { HashRouter as Router,Switch, Routes, Route } from 'react-router-dom';
 import { Navbar, Footer,  } from './components/components';
 import Home from './pages/Home';
 import Login from './pages/Login';
