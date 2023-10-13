@@ -1,7 +1,7 @@
 {
   "files": {
     "main.css": "/williamifix.github.io/myads/static/css/main.1d996684.css",
-    "main.js": "/williamifix.github.io/myads/static/js/main.b01ff7f4.js",
+    "main.js": "/williamifix.github.io/myads/static/js/main.98f0c077.js",
     "static/js/787.d3befce1.chunk.js": "/williamifix.github.io/myads/static/js/787.d3befce1.chunk.js",
     "static/media/programmatic-advertising-1-630f56a4c8720-sej-1280x720.webp": "/williamifix.github.io/myads/static/media/programmatic-advertising-1-630f56a4c8720-sej-1280x720.ad0969cb89ff8063a1dd.webp",
     "static/media/settings-alt.svg": "/williamifix.github.io/myads/static/media/settings-alt.e6839408081e8c4d668f0ff24d1bea0c.svg",
@@ -16,11 +16,11 @@
     "static/media/logout.svg": "/williamifix.github.io/myads/static/media/logout.00ced5e75c41024c13a281442bda7220.svg",
     "index.html": "/williamifix.github.io/myads/index.html",
     "main.1d996684.css.map": "/williamifix.github.io/myads/static/css/main.1d996684.css.map",
-    "main.b01ff7f4.js.map": "/williamifix.github.io/myads/static/js/main.b01ff7f4.js.map",
+    "main.98f0c077.js.map": "/williamifix.github.io/myads/static/js/main.98f0c077.js.map",
     "787.d3befce1.chunk.js.map": "/williamifix.github.io/myads/static/js/787.d3befce1.chunk.js.map"
   },
   "entrypoints": [
     "static/css/main.1d996684.css",
-    "static/js/main.b01ff7f4.js"
+    "static/js/main.98f0c077.js"
   ]
 }
