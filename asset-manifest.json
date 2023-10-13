@@ -1,8 +1,8 @@
 {
   "files": {
     "main.css": "/myads/static/css/main.db555887.css",
-    "main.js": "/myads/static/js/main.c41aa1de.js",
-    "static/js/787.d3befce1.chunk.js": "/myads/static/js/787.d3befce1.chunk.js",
+    "main.js": "/myads/static/js/main.e93c7446.js",
+    "static/js/787.5d24cc73.chunk.js": "/myads/static/js/787.5d24cc73.chunk.js",
     "static/media/programmatic-advertising-1-630f56a4c8720-sej-1280x720.webp": "/myads/static/media/programmatic-advertising-1-630f56a4c8720-sej-1280x720.ad0969cb89ff8063a1dd.webp",
     "static/media/settings-alt.svg": "/myads/static/media/settings-alt.e6839408081e8c4d668f0ff24d1bea0c.svg",
     "static/media/money-bag.svg": "/myads/static/media/money-bag.8aa9aac3b1b24e423bd0321eac6cf7c3.svg",
@@ -16,11 +16,11 @@
     "static/media/logout.svg": "/myads/static/media/logout.00ced5e75c41024c13a281442bda7220.svg",
     "index.html": "/myads/index.html",
     "main.db555887.css.map": "/myads/static/css/main.db555887.css.map",
-    "main.c41aa1de.js.map": "/myads/static/js/main.c41aa1de.js.map",
-    "787.d3befce1.chunk.js.map": "/myads/static/js/787.d3befce1.chunk.js.map"
+    "main.e93c7446.js.map": "/myads/static/js/main.e93c7446.js.map",
+    "787.5d24cc73.chunk.js.map": "/myads/static/js/787.5d24cc73.chunk.js.map"
   },
   "entrypoints": [
     "static/css/main.db555887.css",
-    "static/js/main.c41aa1de.js"
+    "static/js/main.e93c7446.js"
   ]
 }
