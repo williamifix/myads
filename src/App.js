@@ -10,7 +10,7 @@ import Dashboard from './pages/Dashboard'
 
 function App() {
   return (
-    <Router  >
+    <Router  basename='/'>
     {/* <div className='App'> */}
     <Navbar />
      <div className='contentLoader'>
