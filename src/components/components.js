@@ -35,6 +35,16 @@ export function Navbar() {
     };
   }, []); 
 
+    function hideNavRefresh(){
+      if ((window.innerWidth <= 696)&&(isNavVisible)) {
+          // document.querySelector('.navList').style.display = 'none';
+setNavVisibility(false)      }
+
+    }
+
+    // window.addEventListener('click', hideNavRefresh)
+
+
   return (
     <div className="navbar">
       <div className="nav">
@@ -45,11 +55,11 @@ export function Navbar() {
           <div className='bottom'></div>
         </div>
         <ul id='navList' style={{ display: isNavVisible ? 'flex' : 'none' }}>
-          <li><NavLink to="/" className='link '>Home</NavLink></li>
-          <li><NavLink to="/Dashboard" className='link '>Dashboard</NavLink></li>
-          <li><NavLink to="/Pricing" className='link '>Pricing</NavLink></li>
-          <li><NavLink to="/Login" className='link '>Login</NavLink></li>
-          <li><NavLink to="/Register" className='link '>Register</NavLink></li>
+          <li><NavLink to="/" className='link ' onClick={hideNavRefresh}>Home</NavLink></li>
+          <li><NavLink to="/Dashboard" className='link ' onClick={hideNavRefresh}>Dashboard</NavLink></li>
+          <li><NavLink to="/Pricing" className='link ' onClick={hideNavRefresh}>Pricing</NavLink></li>
+          <li><NavLink to="/Login" className='link ' onClick={hideNavRefresh}>Login</NavLink></li>
+          <li><NavLink to="/Register" className='link ' onClick={hideNavRefresh}>Register</NavLink></li>
           <li><button>Create Listing</button></li>
         </ul>
       </div>
@@ -143,7 +153,7 @@ export function Footer(){
         <div className='account'>
           <h3>MY ACCOUNT</h3>
           <ul>
-            <li><NavLink to="/Login" className='link '>Login</NavLink></li>
+            <li><NavLink to="/Login" className='link ' >Login</NavLink></li>
             <li><NavLink to="/Register" className='link '>Register</NavLink></li>
             {/* <li>Login</li>
             <li>Sign Up</li> */}

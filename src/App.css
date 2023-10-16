@@ -407,9 +407,30 @@ hr{
   /* background-color: red; */
   width: 100%;
   align-self: center;
+
   /* margin-top: 20rem; */
   box-sizing: border-box;
 }
+
+
+.aboutUs >div{
+  max-width: 800px;
+  display: flex;
+  align-self: center;
+  margin-inline: auto;
+  align-items: center;
+  justify-content: center;
+  gap: 3rem;
+  margin-bottom: 5rem;
+  margin-top: 2rem;
+  flex-wrap: wrap;
+  box-sizing: border-box;
+  /* background-color: rgb(152, 99, 99); */
+  height: auto;
+  padding: 20px;
+  overflow-x: hidden;
+}
+
 .aboutUs p{
   max-width: 400px;
   font-size: 1.5rem;
@@ -420,32 +441,18 @@ hr{
   /* background-color: gray; */
 }
 
-.aboutUs >div{
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  gap: 3rem;
-  margin-bottom: 5rem;
-  margin-top: 2rem;
-  flex-wrap: wrap;
-  box-sizing: border-box;
-  /* background-color: red; */
-  height: auto;
-  padding: 20px;
-  /* overflow: hidden; */
-}
-
 .aboutUs >div .shape{
-    width: 200px;
+    width: 30%;
     height: 300px;
     border: 1px solid rgb(255, 255, 255);
     position: relative;
     margin-bottom: 5rem;
+    /* background-color: green; */
 
 }
 
 .shape div{
-  width: 100%;
+  width: 90%;
   height: 100%;
   background-color: rgb(173, 124, 34);
   padding: 20px;
@@ -654,6 +661,7 @@ form h4{
     transition: 0.5s;
   
   }
+
   .nav ul li {
     margin-bottom: 1rem;
   }
