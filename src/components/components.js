@@ -60,7 +60,7 @@ setNavVisibility(false)      }
           <li><NavLink to="/Pricing" className='link ' onClick={hideNavRefresh}>Pricing</NavLink></li>
           <li><NavLink to="/Login" className='link ' onClick={hideNavRefresh}>Login</NavLink></li>
           <li><NavLink to="/Register" className='link ' onClick={hideNavRefresh}>Register</NavLink></li>
-          <li><NavLink to="/CreateListing"><button>Create Listing</button></NavLink></li>
+          <li><NavLink to="/CreateListing" onClick={hideNavRefresh}><button>Create Listing</button></NavLink></li>
         </ul>
       </div>
     </div>
@@ -161,7 +161,7 @@ export function Footer(){
         </div>
     </div>
     <hr />
-    <p style={{paddingBottom: "20px"}}>&copy; 2023 ADS. All rights reserved . Designed by <a style={{color: 'orange', cursor:'pointer'}}>iFiX WEB TECH</a></p>
+    <p style={{paddingBottom: "20px", textAlign: 'center'}}>&copy; 2023 ADS. All rights reserved . Designed by <a style={{color: 'orange', cursor:'pointer'}}>iFiX WEB TECH</a></p>
     </div>
 
   )

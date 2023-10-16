@@ -23,20 +23,35 @@ function CreateListing() {
                 <input type="file" />
                 <input type="file" />
                 <h4>Category</h4>
-                <textarea type="text"  style={{height: '10rem', width: '90%', padding: '1rem', boxSizing:'border-box',lineHeight:'1.3rem', backgroundColor: '#babd9e33', color: '#ffffff' }}  placeholder='Give a description of your Listing'/>
+                <textarea type="text"  style={{height: '10rem', width: '100%', padding: '1rem', boxSizing:'border-box',lineHeight:'1.3rem', backgroundColor: '#babd9e33', color: '#ffffff' }}  placeholder='Give a description of your Listing'/>
+                <h4>Price</h4>
+                <input type="text" placeholder='Your Price in GHS' />
+                <div className='subscriptionType'>
+                    <div id='type'>
+                        <input type="checkbox" name='options' />
+                        <p>NEGOTIABLE</p>
+                    </div>
+                    {/* <span>GHS 0.00</span> */}
+                </div>
 
+<br /><br /><br />
                 <h2>Seller Details</h2>
-                <h4>Category</h4>
-                <input type="text" placeholder='Select the Category of your Listing'/>
-                <h4>Title</h4>
+                <h4>Name</h4>
+                <input type="text" placeholder='Enter Your name'/>
+                <h4>Phone / Contact</h4>
                 <input type="text" placeholder='Enter the title of your listing' />
-                <h4>Upload at least one image of your Listing</h4>
-                <input type="file" required/>
-                <input type="file" />
-                <input type="file" />
+                
+                <h4>Links to your Business site / socials</h4>
+                <input type="text" placeholder='Instagram'/>
+                <input type="text" placeholder='LinkedIn'/>
+                <input type="text" placeholder='WhatsApp'/>
+                <input type="text" placeholder='Telegram'/>
+                <input type="text" placeholder='Facebook'/>
+   
 
                 <h2>Promotion Type Details</h2>
                 <p>The premium package help sellers to promote their products or services by giving more visibility to their listings to attract more buyers and sell faster.</p>
+                <br /> <br />
                 <h4>Category</h4>
                 <div className='subscriptionType'>
                     <div id='type'>
@@ -62,6 +77,8 @@ function CreateListing() {
                 {/* <div className='subscriptionType'><input type="radio" name='options' /><p>STANDARD</p></div>
                 <div className='subscriptionType'><input type="radio" name='options' /><p>PREMIUM</p></div>
                  */}
+                 <br />
+                 <button>Submit</button>
             </form>
           </div>
         </div>
