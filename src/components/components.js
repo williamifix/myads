@@ -60,7 +60,7 @@ setNavVisibility(false)      }
           <li><NavLink to="/Pricing" className='link ' onClick={hideNavRefresh}>Pricing</NavLink></li>
           <li><NavLink to="/Login" className='link ' onClick={hideNavRefresh}>Login</NavLink></li>
           <li><NavLink to="/Register" className='link ' onClick={hideNavRefresh}>Register</NavLink></li>
-          <li><button>Create Listing</button></li>
+          <li><NavLink to="/CreateListing"><button>Create Listing</button></NavLink></li>
         </ul>
       </div>
     </div>

@@ -12,7 +12,7 @@ import TermsNCondition from './pages/TermsNConditions';
 import Privacy from './pages/privacy';
 import Sitemap from './pages/sitemap';
 import Contact from './pages/contact';
-
+import CreateListing from './pages/CreateListing';
 // import { SiteNotice } from './components/components';
 
 
@@ -32,9 +32,10 @@ function App() {
            <Route path='/Privacy' element={<Privacy />} />
            <Route path='/Sitemap' element={<Sitemap />} />
            <Route path='/Contact' element={<Contact />} />
+           <Route path='/CreateListing' element={<CreateListing />} />
        </Routes>
      </div>
-     {/* <SiteNotice/> */}
+     <SiteNotice/>
      <Footer />
     {/* </div> */}
  </Router>

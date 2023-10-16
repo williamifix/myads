@@ -5,7 +5,8 @@ html{
   padding: 0px;
   box-sizing: border-box;
   font-size: 16px;
-  
+  background-color: #072326; 
+
  
 }
 
@@ -468,13 +469,14 @@ hr{
 }
 
 .siteNotice{
-  max-width: 1000px;
+  max-width: 1200px;
   height: auto;
   align-self: center;
   margin-inline: auto;
    overflow: hidden;
   box-sizing: border-box;
   margin-bottom: 5rem;
+  /* background-color: #072326; */
 
 }
 .siteNotice h3{
@@ -589,8 +591,8 @@ form input{
   height: 55px;
   padding-inline: 10px;
   box-sizing: border-box;
-  background-color: rgb(186, 189, 158,0.2);
-  color: rgb(221, 168, 104);
+  background-color: #babd9e33;
+  color: #ffffff;
   outline-offset: 1px;
  
 }
@@ -598,8 +600,12 @@ input:focus {
   outline-color: rgb(255, 170, 0);
   outline-width: 1px;
 }
-input::placeholder{
+ input::placeholder{
   color: rgb(198, 197, 186);
+}
+textarea::placeholder{
+  color: rgb(198, 197, 186);
+
 }
 input::-moz-focus-inner{
   border: 0px;

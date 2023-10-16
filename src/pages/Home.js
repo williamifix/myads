@@ -108,7 +108,7 @@ function Home() {
             </div>
 
           </div>
-          <SiteNotice/>
+          {/* <SiteNotice/> */}
 
         </div>
     </div>
