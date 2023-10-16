@@ -674,4 +674,27 @@ form h4{
     top: 60px;
   }
 
+
+
+
+  
+.aboutUs >div .shape{
+  width: 300px;
+  height: 300px;
+  
+
+}
+
+.shape div{
+width: 90%;
+height: 100%;
+background-color: rgb(173, 124, 34);
+padding: 20px;
+position: absolute;
+top: 21px;
+left: 20px;
+transition: 0.5s;
+}
+
+
 }
