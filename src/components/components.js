@@ -2,10 +2,11 @@ import React, { useState, useEffect } from 'react';
 import { NavLink } from 'react-router-dom';
 import '../App.css'
 // import { BrowserRouter as Router, Routes, Route } from 'react-router-dom'
-import Login from '../pages/Login'
-import Home from '../pages/Home'
-import Register from '../pages/Register'
-import Dashboard from '../pages/Dashboard'
+// import Login from '../pages/Login'
+// import Home from '../pages/Home'
+// import Register from '../pages/Register'
+// import Dashboard from '../pages/Dashboard'
+
 
 
 
@@ -46,6 +47,7 @@ export function Navbar() {
         <ul id='navList' style={{ display: isNavVisible ? 'flex' : 'none' }}>
           <li><NavLink to="/" className='link '>Home</NavLink></li>
           <li><NavLink to="/Dashboard" className='link '>Dashboard</NavLink></li>
+          <li><NavLink to="/Pricing" className='link '>Pricing</NavLink></li>
           <li><NavLink to="/Login" className='link '>Login</NavLink></li>
           <li><NavLink to="/Register" className='link '>Register</NavLink></li>
           <li><button>Create Listing</button></li>
@@ -113,27 +115,43 @@ export function Footer(){
         <div className='about'>
           <h3>ABOUT US</h3>
           <ul>
-            <li>Terms & Conditions</li>
-            <li>Privacy</li>
+            <li><NavLink to="/TermsNConditions" className='link '>Terms & Condition</NavLink></li>
+            <li><NavLink to="/privacy" className='link '>Privacy</NavLink></li>
+            {/* <li>Terms & Conditions</li>
+            <li>Privacy</li> */}
           </ul>
         </div>
         <div className='contact'>
           <h3>CONTACT & SITEMAP</h3>
           <ul>
-            <li>Contact Us</li>
-            <li>Sitemap</li>
+            <li><NavLink to="/contact" className='link '>Contact us</NavLink></li>
+            <li><NavLink to="/sitemap" className='link '>Site MAP</NavLink></li>
+            {/* <li>Contact Us</li>
+            <li>Sitemap</li> */}
+          </ul>
+        </div>
+        <div className='account'>
+          <h3>FOLLOW US</h3>
+          <ul>
+            <li>LinkedIn</li>
+            <li>X</li>
+            <li>Instagram</li>
+            <li>Twitter</li>
+            {/* <li>Telegram</li> */}
           </ul>
         </div>
         <div className='account'>
           <h3>MY ACCOUNT</h3>
           <ul>
-            <li>Login</li>
-            <li>Sign Up</li>
+            <li><NavLink to="/Login" className='link '>Login</NavLink></li>
+            <li><NavLink to="/Register" className='link '>Register</NavLink></li>
+            {/* <li>Login</li>
+            <li>Sign Up</li> */}
           </ul>
         </div>
     </div>
     <hr />
-    <p style={{paddingBottom: "20px"}}>&copy; 2023 ADS. All rights reserved</p>
+    <p style={{paddingBottom: "20px"}}>&copy; 2023 ADS. All rights reserved . Designed by <a style={{color: 'orange', cursor:'pointer'}}>iFiX WEB TECH</a></p>
     </div>
 
   )
@@ -181,6 +199,20 @@ export function ListItem(){
   )
 }
 
+export function SiteNotice(){
+  return(
+    <div className="siteNotice">
+      <div>
+      <h3>Buy and Sell your products and services on MY Ads</h3>
+      <p>
+          Looking for a one-stop marketplace to buy, sell, rent, or discover used electronics, furniture, cars, movies, books, fashion, real estate, services, jobs, events , and more? Welcome to ADS, the largest collection of free classified ads in Ghana!
+          With ADS, you get free user-to-user classified ads in all major cities. Post your ad at zero cost and explore an extensive selection of free classifieds. Your ad will reach a massive audience, and guess what? You can even upload captivating pictures or add a link to your website!
+          Whether you're a pro or an individual, ADS is your gateway to incredible deals! From used cars to trendy fashion, mobile phones to elegant furniture - it's all here. Embrace the power of ADS today and make the best deals in town!
+      </p>
+      </div>
+    </div>
+  )
+}
 
 const components = () => {
   return (
@@ -189,6 +221,7 @@ const components = () => {
     <categoryListing/>
     <LatestListing/>
     <Footer/>
+    <SiteNotice/>
    </div>
   )
 }

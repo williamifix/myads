@@ -23,6 +23,7 @@ html{
   justify-content: center;
   box-sizing: border-box;
   /* box-shadow: 1px 1px 1px rgb(164, 111, 5); */
+  /* transition: 1s; */
 }
 .nav{
 width: 90%;
@@ -41,7 +42,6 @@ gap: 1rem;
 justify-content: center;
 align-items: center;
 flex-direction: row;
-
 }
 
 
@@ -138,6 +138,7 @@ li{
 .nav .active{
   color: rgb(197, 127, 5);
   font-weight: bold;
+
 }
 button{
   padding: 1.3rem;
@@ -153,13 +154,6 @@ button:hover {
   background-color: rgb(166, 133, 11);
   transition: 0.3s;
 }
-
-
-
-
-
-
-
 
 
 
@@ -204,7 +198,7 @@ button:hover {
   position: absolute;
   width: 100%;
   height: inherit;
-  background-color: rgb(17, 43, 46,0.3);
+  background-color: rgb(17, 43, 46,0.9);
   backdrop-filter: blur(2px);
   z-index: 3;
 }
@@ -282,7 +276,7 @@ hr{
 
 }
 .categoryListing .heading {
-  background-color: rgb(164, 111, 5);
+  background-color: rgb(27, 86, 91);
   width: 100%;
   height: 2.5rem;
   margin-bottom: 0.5rem;
@@ -322,7 +316,7 @@ hr{
   height: 4px;
 }
 .category::-webkit-scrollbar-thumb {
-  background-color: rgb(90, 113, 116);
+  background-color: rgb(27, 86, 91);
   height: 2rem;
 }
 
@@ -376,7 +370,7 @@ hr{
   color: white;
   border-radius: 5px;
   padding: 0px 20px;
-  margin-bottom: 10px;
+  margin-bottom: 5rem;
   display: flex;
   flex-direction: column;
   position: relative;
@@ -411,34 +405,85 @@ hr{
 
 .aboutUs {
   /* background-color: red; */
-  max-width: 1200px;
+  width: 100%;
   align-self: center;
-  margin-top: 20rem;
+  /* margin-top: 20rem; */
+  box-sizing: border-box;
 }
 .aboutUs p{
-  width: 400px;
+  max-width: 400px;
   font-size: 1.5rem;
   text-align: center;
   color: rgb(255, 170, 0);
+  padding-inline: 1rem;
+  text-wrap: wrap;
+  /* background-color: gray; */
 }
 
 .aboutUs >div{
   display: flex;
   align-items: center;
   justify-content: center;
-  gap: 10rem;
-  margin-bottom: 10rem;
+  gap: 3rem;
+  margin-bottom: 5rem;
+  margin-top: 2rem;
   flex-wrap: wrap;
+  box-sizing: border-box;
+  /* background-color: red; */
+  height: auto;
+  padding: 20px;
+  /* overflow: hidden; */
 }
 
 .aboutUs >div .shape{
     width: 200px;
-    height: 400px;
-    background-color: white;
-    
+    height: 300px;
+    border: 1px solid rgb(255, 255, 255);
+    position: relative;
+    margin-bottom: 5rem;
 
 }
 
+.shape div{
+  width: 100%;
+  height: 100%;
+  background-color: rgb(173, 124, 34);
+  padding: 20px;
+  position: absolute;
+  top: 20px;
+  left: 20px;
+  transition: 0.5s;
+}
+
+.shape div:hover{
+  top: 0px;
+  left: 0px;
+}
+
+.siteNotice{
+  max-width: 1000px;
+  height: auto;
+  align-self: center;
+  margin-inline: auto;
+   overflow: hidden;
+  box-sizing: border-box;
+  margin-bottom: 5rem;
+
+}
+.siteNotice h3{
+  font-size: 2rem;
+  /* background-color: red; */
+}
+.siteNotice div{
+width: 90%;
+margin-inline: auto;
+/* background-color: yellow; */
+}
+.siteNotice  p{
+  color: rgb(255, 255, 255);
+  text-align: justify;
+ 
+}
 
 .foot {
   width: 100%;
@@ -458,12 +503,13 @@ hr{
   color: white;
   display: flex;
   justify-content: space-between;
-  border-bottom: white solid 2px;
+  border-bottom: white solid 1px;
   flex-wrap: wrap;
+  overflow: hidden;
 }
 
 .footerCategories > div{
-  height: 7rem;
+  height: auto;
   width: 200px;
   margin: 10px;
   color: white;
@@ -495,7 +541,7 @@ hr{
   width: 100vw;
   height: auto;
   padding-top: 80px;
-  /* padding-bottom: 100px; */
+  padding-bottom: 100px;
   /* border: 1px solid; */
   overflow: hidden;
   box-sizing: border-box;
@@ -523,7 +569,7 @@ form{
   align-items: center;
   margin-inline: auto;
   width: 100%;
-  /* padding: 10px; */
+  padding-top: 3rem;
   border-radius: 10px;
   /* background-color: aqua; */
   
@@ -554,6 +600,9 @@ input::-moz-focus-inner{
 form button {
   width: 90%;
 }
+.Login h1{
+  margin-top: 1.5rem;
+}
 form h4{
   width: 90%;
   color: rgb(255, 170, 0);
@@ -563,6 +612,7 @@ form h4{
 .Login p{
   text-align: center;
   color: rgb(255, 170, 0);
+  margin-top: 1rem;
 }
 
 
@@ -590,11 +640,11 @@ form h4{
   .nav ul {
     background-color: #072326;
     position: fixed;
-    height: 20rem;
+    height: 24rem;
     width: 100%;
     padding:  0px;
     left: 0px;
-    top: 43px;
+    top: 47px;
     display: inline-flex;
     align-items: center;
     flex-direction: column;

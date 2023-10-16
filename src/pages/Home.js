@@ -2,6 +2,7 @@ import React from 'react';
 import '../App.css';
 import { useState } from 'react';
 
+import { SiteNotice } from '../components/components';
 
 function Home() {
 
@@ -27,10 +28,10 @@ function Home() {
             <div className="overlay"></div>
             <div className="homeFeatures">
                 <h1>ADS</h1>
-                <h3 style={{textAlign: "center", color: "white"}}>67548 Classified Ads available online</h3>
+                <h3 style={{textAlign: "center", color: "orange", marginBottom: '1rem'}}>67548 Classified Ads available online</h3>
                 <div className="searchBar">
                     <input type="text" placeholder='Enter your search'/>
-                    <h4>search</h4>
+                    <h4 style={{color: 'white'}}>search</h4>
                 </div>
             </div>
         </div>
@@ -91,21 +92,24 @@ function Home() {
             <h1>who we are?</h1>
             <div className="aboutwho">
               <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Incidunt delectus placeat voluptates reiciendis! Recusandae natus impedit culpa nobis odit repudiandae repellat itaque aliquid qui saepe magni et, non tempora nesciunt voluptate sunt vitae magnam sint quaerat expedita architecto eius cum?</p>
-              <div className='shape circle'></div>
+              <div className='shape circle'><div></div></div>
             </div>
 
             <h1>what we do for you?</h1>
             <div className="aboutwhat">
               <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Incidunt delectus placeat voluptates reiciendis! Recusandae natus impedit culpa nobis odit repudiandae repellat itaque aliquid qui saepe magni et, non tempora nesciunt voluptate sunt vitae magnam sint quaerat expedita architecto eius cum?</p>
-              <div className='shape triangle'></div>
+              <div className='shape triangle'><div></div></div>
             </div>
 
             <h1>How we do Our Magic?</h1>
             <div className="abouthow">
               <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Incidunt delectus placeat voluptates reiciendis! Recusandae natus impedit culpa nobis odit repudiandae repellat itaque aliquid qui saepe magni et, non tempora nesciunt voluptate sunt vitae magnam sint quaerat expedita architecto eius cum?</p>
-              <div className='shape sqaure'></div>
+              <div className='shape sqaure'><div></div></div>
             </div>
+
           </div>
+          <SiteNotice/>
+
         </div>
     </div>
    
