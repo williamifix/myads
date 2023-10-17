@@ -10,9 +10,6 @@ html{
  
 }
 
-
-
-
 .navbar{
   width: 100vw;
   height: 5rem;
@@ -23,8 +20,6 @@ html{
   display: flex;
   justify-content: center;
   box-sizing: border-box;
-  /* box-shadow: 1px 1px 1px rgb(164, 111, 5); */
-  /* transition: 1s; */
 }
 .nav{
 width: 90%;
@@ -45,26 +40,11 @@ align-items: center;
 flex-direction: row;
 }
 
-
-
 .navbar .showMenu {
   display: none;
   position: absolute;
   right: 0rem;
 }
-
-
-
-
-
-
-
-
-
-
-
-
-
 
 
 .showMenu{
@@ -115,14 +95,9 @@ display: none;}
 }
 
 
-
-
-
 .hideMenuIcon {
   display: none;
 }
-
-
 
 
 li{
@@ -155,7 +130,6 @@ button:hover {
   background-color: rgb(166, 133, 11);
   transition: 0.3s;
 }
-
 
 
 .contentLoader{
@@ -263,7 +237,6 @@ hr{
   height: 10.3rem;
   display: flex;
   flex-direction: column;
-  /* padding-inline: 1rem; */
   padding-bottom: 0.5rem;
   box-sizing: border-box;
   margin-bottom: 1rem;
@@ -271,7 +244,6 @@ hr{
   top: 5rem;
   background-color: #112b2e;
   z-index: 9;
-  /* border: 1px solid rgb(255, 170, 0); */
   transition: 0.5s;
 
 
@@ -405,11 +377,8 @@ hr{
 }
 
 .aboutUs {
-  /* background-color: red; */
   width: 100%;
   align-self: center;
-
-  /* margin-top: 20rem; */
   box-sizing: border-box;
 }
 
@@ -421,12 +390,11 @@ hr{
   margin-inline: auto;
   align-items: center;
   justify-content: center;
-  gap: 3rem;
+  gap: 2rem;
   margin-bottom: 5rem;
   margin-top: 2rem;
   flex-wrap: wrap;
   box-sizing: border-box;
-  /* background-color: rgb(152, 99, 99); */
   height: auto;
   padding: 20px;
   overflow-x: hidden;
@@ -439,7 +407,6 @@ hr{
   color: rgb(255, 170, 0);
   padding-inline: 1rem;
   text-wrap: wrap;
-  /* background-color: gray; */
 }
 
 .aboutUs >div .shape{
@@ -448,12 +415,11 @@ hr{
     border: 1px solid rgb(255, 255, 255);
     position: relative;
     margin-bottom: 5rem;
-    /* background-color: green; */
 
 }
 
 .shape div{
-  width: 90%;
+  width: 85%;
   height: 100%;
   background-color: rgb(173, 124, 34);
   padding: 20px;
@@ -476,17 +442,14 @@ hr{
    overflow: hidden;
   box-sizing: border-box;
   margin-bottom: 5rem;
-  /* background-color: #072326; */
 
 }
 .siteNotice h3{
   font-size: 2rem;
-  /* background-color: red; */
 }
 .siteNotice div{
 width: 90%;
 margin-inline: auto;
-/* background-color: yellow; */
 }
 .siteNotice  p{
   color: rgb(255, 255, 255);
@@ -526,18 +489,12 @@ margin-inline: auto;
   padding: 1rem;
   display: flex;
   flex-direction: column;
-  /* background-color: red; */
 }
 
 .foot ul {
   margin: 0;
   padding: 0;
 }
-
-
-
-
-
 
 
 
@@ -553,7 +510,6 @@ margin-inline: auto;
   height: auto;
   padding-top: 80px;
   padding-bottom: 100px;
-  /* border: 1px solid; */
   overflow: hidden;
   box-sizing: border-box;
   position:  relative;
@@ -564,9 +520,7 @@ margin-inline: auto;
   max-width: 600px;
   margin-inline: auto;
   height: inherit;
-  /* background-color: red; */
   display: flex;
-  /* align-items: center; */
   flex-direction: column;
   box-sizing: border-box;
 
@@ -582,7 +536,6 @@ form{
   width: 100%;
   padding-top: 3rem;
   border-radius: 10px;
-  /* background-color: aqua; */
   
 }
 form input{
@@ -667,7 +620,6 @@ form h4{
     align-items: center;
     flex-direction: column;
     justify-content: center;
-    /* overflow: scroll; */
     border-bottom: 1px solid rgb(255, 170, 0);
     transition: 0.5s;
   
@@ -710,18 +662,19 @@ transition: 0.5s;
 
 }
 @media screen and (width <=425px) {
-  .foot {
-    /* background-color: red; */
+ html{
+  font-size: 12px;
+ }
+  .footerCategories {
+    padding: 0rem;
   }
 
-  /* .footerCategories > div{
+  .footerCategories > div{
     height: auto;
     width: 140px;
-    margin: 10px;
     color: white;
-    padding: 1rem;
     display: flex;
     flex-direction: column;
-    background-color: red;
-  } */
+    box-sizing: border-box;
+  }
 }

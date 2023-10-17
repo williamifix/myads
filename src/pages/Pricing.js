@@ -12,22 +12,44 @@ function Pricing() {
             <div className="priceFree">
                 <div className="priceHeader">
                     <h2>
-                        FREE
+                        STANDARD
                     </h2>
                 </div>
                 <div className="priceDetails">
-
+                <ul>
+                        <li>Limited Feature</li>
+                        <li> imaages upload</li>
+                     
+                    </ul>
                 </div>
                 <button>Get Started</button>
             </div>
             <div className="priceStandard">
             <div className="priceHeader">
                     <h2>
-                        STANDARD
+                        FREE
                     </h2>
                 </div>
                 <div className="priceDetails">
-
+                    <span> 0$ / ADS </span>
+                    <span> 0$ / ADS </span>
+                    <span> 0$ / ADS </span>
+                    <span> 0$ / ADS </span>
+                    <span> 0$ / ADS </span>
+                    <span> 0$ / ADS </span>
+                    <span> 0$ / ADS </span>
+                    <span> 0$ / ADS </span>
+                    <span> 0$ / ADS </span>
+                    <span> 0$ / ADS </span>
+                    <span> 0$ / ADS </span>
+                    <span> 0$ / ADS </span>
+                    <span> 0$ / ADS </span>
+                    <span> 0$ / ADS </span>
+                    <span> 0$ / ADS </span>
+                    <span> 0$ / ADS </span>
+                    <span> 0$ / ADS </span>
+                    <span> 0$ / ADS </span>
+                   
                 </div>
                 <button>Get Started</button>
             </div>
