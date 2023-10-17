@@ -1,7 +1,7 @@
 {
   "files": {
-    "main.css": "/myads/static/css/main.d1853288.css",
-    "main.js": "/myads/static/js/main.39955301.js",
+    "main.css": "/myads/static/css/main.31f67131.css",
+    "main.js": "/myads/static/js/main.a7e8cb67.js",
     "static/js/787.5d24cc73.chunk.js": "/myads/static/js/787.5d24cc73.chunk.js",
     "static/media/programmatic-advertising-1-630f56a4c8720-sej-1280x720.webp": "/myads/static/media/programmatic-advertising-1-630f56a4c8720-sej-1280x720.ad0969cb89ff8063a1dd.webp",
     "static/media/construction-icon-38955.png": "/myads/static/media/construction-icon-38955.9d724fc3f8b3bfe36c48.png",
@@ -16,12 +16,12 @@
     "static/media/user.svg": "/myads/static/media/user.8ece8f81014f97d66454f2bffab1b957.svg",
     "static/media/logout.svg": "/myads/static/media/logout.00ced5e75c41024c13a281442bda7220.svg",
     "index.html": "/myads/index.html",
-    "main.d1853288.css.map": "/myads/static/css/main.d1853288.css.map",
-    "main.39955301.js.map": "/myads/static/js/main.39955301.js.map",
+    "main.31f67131.css.map": "/myads/static/css/main.31f67131.css.map",
+    "main.a7e8cb67.js.map": "/myads/static/js/main.a7e8cb67.js.map",
     "787.5d24cc73.chunk.js.map": "/myads/static/js/787.5d24cc73.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.d1853288.css",
-    "static/js/main.39955301.js"
+    "static/css/main.31f67131.css",
+    "static/js/main.a7e8cb67.js"
   ]
 }
