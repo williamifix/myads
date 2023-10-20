@@ -35,15 +35,30 @@ export function Navbar() {
     };
   }, []); 
 
+
+
+
+
+
     function hideNavRefresh(){
       if ((window.innerWidth <= 696)&&(isNavVisible)) {
-          // document.querySelector('.navList').style.display = 'none';
-setNavVisibility(false)      }
+          setNavVisibility(false)      
+        }
+        scrollToTop();
+      }
 
-    }
 
-    // window.addEventListener('click', hideNavRefresh)
 
+
+
+
+function scrollToTop(){
+  window.scrollTo({
+    top: 0,
+    behavior: 'smooth',
+
+  });
+}
 
   return (
     <div className="navbar">
@@ -70,63 +85,55 @@ setNavVisibility(false)      }
 
 
 
-// export function ContentLoader (){
-//   return (
-//     <main className='contentLoader'>
-//           <Routes>
-//             <Route path='/' element={<Home/>} />
-//             <Route path='/login' element={<Login />} />
-//             <Route path='/register' element={<Register />} />
-//           </Routes>
-      
-//     </main>
 
 
+// export function CategoryListing(){
+//   return(
+//     <div className='categoryListing'>
+//       <h2>Browse Listing by Category</h2>
+//        <div className="category">
+//         <CardItem/>
+//         <CardItem/>
+//         <CardItem/>
+//         <CardItem/>
+//         <CardItem/>
+//         <CardItem/>
+//         <CardItem/>
+//         <CardItem/>
+//        </div>
+
+//     </div>
+//   )
+// }
+
+// export function CardItem(){
+//   return(
+    
+//     <div className='cardItem'>
+//       <h3>Card Name</h3>
+//       <p>Lorem ipsum, dolor si reiciendis reprehenderit, eligendi magni.</p>
+//       <div className="categoryImage"></div>
+//     </div>
 //   )
 // }
 
 
-
-export function CategoryListing(){
-  return(
-    <div className='categoryListing'>
-      <h2>Browse Listing by Category</h2>
-       <div className="category">
-        <CardItem/>
-        <CardItem/>
-        <CardItem/>
-        <CardItem/>
-        <CardItem/>
-        <CardItem/>
-        <CardItem/>
-        <CardItem/>
-       </div>
-
-    </div>
-  )
-}
-
-export function CardItem(){
-  return(
-    
-    <div className='cardItem'>
-      <h3>Card Name</h3>
-      <p>Lorem ipsum, dolor si reiciendis reprehenderit, eligendi magni.</p>
-      <div className="categoryImage"></div>
-    </div>
-  )
-}
-
-
 export function Footer(){
+  function scrollToTop(){
+    window.scrollTo({
+      top: 0,
+      behavior: 'smooth',
+  
+    });
+  }
   return (
     <div className="foot">
       <div className="footerCategories">
         <div className='about'>
           <h3>ABOUT US</h3>
           <ul>
-            <li><NavLink to="/TermsNConditions" className='link '>Terms & Condition</NavLink></li>
-            <li><NavLink to="/privacy" className='link '>Privacy</NavLink></li>
+            <li><NavLink to="/TermsNConditions" className='link ' onClick={scrollToTop} >Terms & Condition</NavLink></li>
+            <li><NavLink to="/privacy" className='link ' onClick={scrollToTop}>Privacy</NavLink></li>
             {/* <li>Terms & Conditions</li>
             <li>Privacy</li> */}
           </ul>
@@ -134,8 +141,8 @@ export function Footer(){
         <div className='contact'>
           <h3>CONTACT & SITEMAP</h3>
           <ul>
-            <li><NavLink to="/contact" className='link '>Contact us</NavLink></li>
-            <li><NavLink to="/sitemap" className='link '>Site MAP</NavLink></li>
+            <li><NavLink to="/contact" className='link ' onClick={scrollToTop}>Contact us</NavLink></li>
+            <li><NavLink to="/sitemap" className='link ' onClick={scrollToTop}>Site MAP</NavLink></li>
             {/* <li>Contact Us</li>
             <li>Sitemap</li> */}
           </ul>
@@ -153,15 +160,15 @@ export function Footer(){
         <div className='account'>
           <h3>MY ACCOUNT</h3>
           <ul>
-            <li><NavLink to="/Login" className='link ' >Login</NavLink></li>
-            <li><NavLink to="/Register" className='link '>Register</NavLink></li>
+            <li><NavLink to="/Login" className='link ' onClick={scrollToTop}>Login</NavLink></li>
+            <li><NavLink to="/Register" className='link 'onClick={scrollToTop}>Register</NavLink></li>
             {/* <li>Login</li>
             <li>Sign Up</li> */}
           </ul>
         </div>
     </div>
     <hr />
-    <p style={{paddingBottom: "20px", textAlign: 'center'}}>&copy; 2023 ADS. All rights reserved . Designed by <a style={{color: 'orange', cursor:'pointer'}}>iFiX WEB TECH</a></p>
+    <p style={{paddingBottom: "20px", textAlign: 'center'}}>&copy; 2023 ADS. All rights reserved . Designed by <em href='#' style={{color: 'orange', cursor:'pointer'}}>iFiX WEB TECH</em></p>
     </div>
 
   )

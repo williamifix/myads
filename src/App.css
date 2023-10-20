@@ -151,7 +151,7 @@ button:hover {
 .homePallet{
   width: 100%;
   height: calc(15rem + 30vmin);
-  background-image: url('../asset/images/programmatic-advertising-1-630f56a4c8720-sej-1280x720.webp');
+  background-image: url('../asset/images/isometric-people-working-with-technology_52683-19078.avif');
   background-repeat: no-repeat;
   background-size: cover;
   display: flex;
@@ -173,7 +173,7 @@ button:hover {
   position: absolute;
   width: 100%;
   height: inherit;
-  background-color: rgb(17, 43, 46,0.9);
+  background-color: rgb(17, 43, 46,0.3);
   backdrop-filter: blur(2px);
   z-index: 3;
 }
@@ -337,18 +337,29 @@ hr{
 }
 
 .lastestListing{
-  max-height: auto;
+  width: 100%;
+  max-width: 1800px;
+  /* max-height: 850px; */
+  /* background-color: red; */
+  height: auto;
   overflow-x: hidden;
   align-self: center;
   color: white;
   border-radius: 5px;
-  padding: 0px 20px;
+  /* padding-inline: 1rem; */
+  padding-bottom: 5rem;
   margin-bottom: 5rem;
   display: flex;
-  flex-direction: column;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: center;
   position: relative;
+  box-sizing: border-box;
+  border-bottom: 1px solid orange;
 }
 .lastestListing h2{
+  width: inherit;
+  margin-inline: 0px;
   position: sticky;
   background-color: #112b2e ;
   width: inherit;
@@ -356,21 +367,30 @@ hr{
   right: 0px;
   left: 0px;
   padding: 20px;
+  margin-bottom: 2rem;
   border-bottom: 1px solid rgb(255, 170, 0,0.3);
 }
 
 .item{
+  min-width:300px;
+  max-width: 400px;
   min-width: inherit;
   display:  flex;
   flex-direction: row;
   color: white;
   gap: 20px;
   border-bottom: 1px solid rgb(255, 255, 255,0.1);
-  padding-bottom: 10px;
+  padding-bottom: 1rem;
   margin-bottom: 20px;
+  margin-right: 2%;
+  /* background-color: blue; */
 
 }
-
+.lastestListing button{
+  position: absolute;
+  bottom: 0px;
+  left: 0px;
+}
 .itemDetails{
   width: auto;
   height: auto;
@@ -412,7 +432,7 @@ hr{
 .aboutUs >div .shape{
     width: 30%;
     height: 300px;
-    border: 1px solid rgb(255, 255, 255);
+    border: 1px solid rgb(246, 245, 235);
     position: relative;
     margin-bottom: 5rem;
 
@@ -422,6 +442,8 @@ hr{
   width: 85%;
   height: 100%;
   background-color: rgb(173, 124, 34);
+  background-size: cover;
+  background-position: center;
   padding: 20px;
   position: absolute;
   top: 20px;
@@ -429,9 +451,21 @@ hr{
   transition: 0.5s;
 }
 
+.aboutUs .aboutImageOne{
+  background-image: url('./pages/ceoGoogle.jpeg');
+
+}
+.aboutUs .aboutImageTwo{
+  background-image: url('./pages/ceoThree.jpg');
+
+}
+.aboutUs .aboutImageThree{
+  background-image: url('./pages/ceoTWO.jpeg');
+
+}
 .shape div:hover{
-  top: 0px;
-  left: 0px;
+  top: 10px;
+  left: 10px;
 }
 
 .siteNotice{
@@ -575,8 +609,9 @@ form button {
   color: white;
 }
 form h4{
-  width: 90%;
+  width: 100%;
   color: rgb(255, 170, 0);
+  padding-bottom: 1rem;
 
 
 }

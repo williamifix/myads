@@ -2,10 +2,10 @@ import React from 'react';
 import '../App.css';
 import { useState } from 'react';
 
-import { SiteNotice } from '../components/components';
+// import { SiteNotice } from '../components/components';
 
 function Home() {
-
+ 
   const [isCategoryListingVisible, setCategoryListingVisibility] = useState(true);
 
   const toggleCategoryListing = () => {
@@ -92,19 +92,19 @@ function Home() {
             <h1>who we are?</h1>
             <div className="aboutwho">
               <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Incidunt delectus placeat voluptates reiciendis! Recusandae natus impedit culpa nobis odit repudiandae repellat itaque aliquid qui saepe magni et, non tempora nesciunt voluptate sunt vitae magnam sint quaerat expedita architecto eius cum?</p>
-              <div className='shape circle'><div></div></div>
+              <div className='shape circle'><div className='aboutImageOne'></div></div>
             </div>
 
             <h1>what we do for you?</h1>
             <div className="aboutwhat">
               <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Incidunt delectus placeat voluptates reiciendis! Recusandae natus impedit culpa nobis odit repudiandae repellat itaque aliquid qui saepe magni et, non tempora nesciunt voluptate sunt vitae magnam sint quaerat expedita architecto eius cum?</p>
-              <div className='shape triangle'><div></div></div>
+              <div className='shape triangle'><div className='aboutImageTwo'></div></div>
             </div>
 
             <h1>How we do Our Magic?</h1>
             <div className="abouthow">
               <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Incidunt delectus placeat voluptates reiciendis! Recusandae natus impedit culpa nobis odit repudiandae repellat itaque aliquid qui saepe magni et, non tempora nesciunt voluptate sunt vitae magnam sint quaerat expedita architecto eius cum?</p>
-              <div className='shape sqaure'><div></div></div>
+              <div className='shape sqaure'><div className='aboutImageThree'></div></div>
             </div>
 
           </div>
@@ -142,7 +142,9 @@ export function CategoryListing(){
           <CardItem/>
           
          </div>
-  
+          <div className="sideInfo">
+            <p>something is also here</p>
+          </div>
       </div>
     )
   }
@@ -167,8 +169,19 @@ export function CategoryListing(){
           <ListItem/>
           <ListItem/>
           <ListItem/>
+          <ListItem/>
+          <ListItem/>
+          <ListItem/>
+          <ListItem/>
+          <ListItem/>
+          <ListItem/>
+          <ListItem/>
+          <ListItem/>
+          <ListItem/>
+          <ListItem/>
+          <ListItem/>
           
-          <button className='my-custom-button'>view more </button>
+          <button className='button'>view more </button>
       </div>
     )
   }

@@ -1,7 +1,7 @@
-import logo from './logo.svg';
+// import logo from './logo.svg';
 import './App.css';
 
-import { HashRouter as Router,Switch, Routes, Route } from 'react-router-dom';
+import { HashRouter as Router, Routes, Route } from 'react-router-dom';
 import { Navbar, Footer,SiteNotice } from './components/components';
 import Home from './pages/Home';
 import Login from './pages/Login';
@@ -19,7 +19,7 @@ import CreateListing from './pages/CreateListing';
 function App() {
   return (
     <Router  basename='/'>
-    {/* <div className='App'> */}
+    <div className='App'>
     <Navbar />
      <div className='contentLoader'>
        <Routes>
@@ -37,7 +37,7 @@ function App() {
      </div>
      <SiteNotice/>
      <Footer />
-    {/* </div> */}
+    </div>
  </Router>
   );
 }
