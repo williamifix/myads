@@ -1,10 +1,12 @@
 {
   "files": {
-    "main.css": "/myads/static/css/main.31f67131.css",
-    "main.js": "/myads/static/js/main.a7e8cb67.js",
+    "main.css": "/myads/static/css/main.f58d84aa.css",
+    "main.js": "/myads/static/js/main.e1025e86.js",
     "static/js/787.5d24cc73.chunk.js": "/myads/static/js/787.5d24cc73.chunk.js",
-    "static/media/programmatic-advertising-1-630f56a4c8720-sej-1280x720.webp": "/myads/static/media/programmatic-advertising-1-630f56a4c8720-sej-1280x720.ad0969cb89ff8063a1dd.webp",
+    "static/media/ceoTWO.jpeg": "/myads/static/media/ceoTWO.4c017a7b69e264f2dc24.jpeg",
+    "static/media/ceoThree.jpg": "/myads/static/media/ceoThree.ea22d1e11c5f5e339613.jpg",
     "static/media/construction-icon-38955.png": "/myads/static/media/construction-icon-38955.9d724fc3f8b3bfe36c48.png",
+    "static/media/isometric-people-working-with-technology_52683-19078.avif": "/myads/static/media/isometric-people-working-with-technology_52683-19078.13e03de131593d812d1c.avif",
     "static/media/settings-alt.svg": "/myads/static/media/settings-alt.e6839408081e8c4d668f0ff24d1bea0c.svg",
     "static/media/money-bag.svg": "/myads/static/media/money-bag.8aa9aac3b1b24e423bd0321eac6cf7c3.svg",
     "static/media/telescope.svg": "/myads/static/media/telescope.a4a59b6b05520a841be778e59cd880dd.svg",
@@ -12,16 +14,15 @@
     "static/media/star-shape.svg": "/myads/static/media/star-shape.ec668d73151af139cd6c15985d06538f.svg",
     "static/media/list.svg": "/myads/static/media/list.c2798bfb947e1735e845640ed6274988.svg",
     "static/media/stamp.svg": "/myads/static/media/stamp.6add8c307de5a9ec75c092a7ccbe10ad.svg",
-    "static/media/logo.svg": "/myads/static/media/logo.6ce24c58023cc2f8fd88fe9d219db6c6.svg",
     "static/media/user.svg": "/myads/static/media/user.8ece8f81014f97d66454f2bffab1b957.svg",
     "static/media/logout.svg": "/myads/static/media/logout.00ced5e75c41024c13a281442bda7220.svg",
     "index.html": "/myads/index.html",
-    "main.31f67131.css.map": "/myads/static/css/main.31f67131.css.map",
-    "main.a7e8cb67.js.map": "/myads/static/js/main.a7e8cb67.js.map",
+    "main.f58d84aa.css.map": "/myads/static/css/main.f58d84aa.css.map",
+    "main.e1025e86.js.map": "/myads/static/js/main.e1025e86.js.map",
     "787.5d24cc73.chunk.js.map": "/myads/static/js/787.5d24cc73.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.31f67131.css",
-    "static/js/main.a7e8cb67.js"
+    "static/css/main.f58d84aa.css",
+    "static/js/main.e1025e86.js"
   ]
 }
