@@ -6,7 +6,7 @@ import { useState } from 'react';
 
 function Home() {
  
-  const [isCategoryListingVisible, setCategoryListingVisibility] = useState(true);
+  const [isCategoryListingVisible, setCategoryListingVisibility] = useState(false);
 
   const toggleCategoryListing = () => {
     setCategoryListingVisibility(!isCategoryListingVisible);

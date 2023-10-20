@@ -700,16 +700,20 @@ transition: 0.5s;
  html{
   font-size: 15px;
  }
+ .foot{
+  /* background-color: red; */
+ }
   .footerCategories {
     padding: 0rem;
   }
 
   .footerCategories > div{
     height: auto;
-    width: 140px;
+    width: 160px;
     color: white;
     display: flex;
     flex-direction: column;
     box-sizing: border-box;
+    /* background-color: blue; */
   }
 }
