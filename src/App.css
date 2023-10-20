@@ -698,7 +698,7 @@ transition: 0.5s;
 }
 @media screen and (width <=425px) {
  html{
-  font-size: 12px;
+  font-size: 15px;
  }
   .footerCategories {
     padding: 0rem;
