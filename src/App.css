@@ -13,7 +13,7 @@ html{
 .navbar{
   width: 100vw;
   height: 5rem;
-  background-color: #072326;
+  background-color: #0c0726;
   position: fixed;
   top: 0px;
   z-index: 10;
@@ -21,6 +21,11 @@ html{
   justify-content: center;
   box-sizing: border-box;
 }
+.navbar #logo{
+  width: 3.5rem;
+  height: 3.5rem;
+}
+
 .nav{
 width: 90%;
 height: 5rem;
@@ -150,7 +155,7 @@ button:hover {
 }
 .homePallet{
   width: 100%;
-  height: calc(15rem + 30vmin);
+  height: calc(15rem + 50vmin);
   background-image: url('../asset/images/isometric-people-working-with-technology_52683-19078.avif');
   background-repeat: no-repeat;
   background-size: cover;
@@ -173,15 +178,16 @@ button:hover {
   position: absolute;
   width: 100%;
   height: inherit;
-  background-color: rgb(17, 43, 46,0.3);
+  background-color: rgb(17, 43, 46,0.4);
   backdrop-filter: blur(2px);
   z-index: 3;
 }
 
 h1{
   text-align: center;
-  font-size: 3rem;
+  font-size: calc(2rem + 5vmin);
   color: rgb(255, 255, 255);
+  
 }
 
 h2{
@@ -201,6 +207,7 @@ hr{
 
 .searchBar {
   width: 70%;
+  max-width: 600px;
   height: 3.5rem;
   display: flex;
   justify-content: space-between;
@@ -234,14 +241,14 @@ hr{
 
 .categoryListing {
   width: 100%;
-  height: 10.3rem;
+  height: 20rem;
   display: flex;
   flex-direction: column;
   padding-bottom: 0.5rem;
   box-sizing: border-box;
-  margin-bottom: 1rem;
+  margin-bottom: 0.5rem;
   position: sticky;
-  top: 5rem;
+  top: 4.6rem;
   background-color: #112b2e;
   z-index: 9;
   transition: 0.5s;
@@ -249,10 +256,10 @@ hr{
 
 }
 .categoryListing .heading {
-  background-color: rgb(27, 86, 91);
+  background-color: #1b565b;
   width: 100%;
   height: 2.5rem;
-  margin-bottom: 0.5rem;
+  /* margin-bottom: 0.5rem; */
   display: flex;
   justify-content: space-between;
   align-items: center;
@@ -274,10 +281,12 @@ hr{
 
 .category{
   width: 100%;
-  height: 7rem;
+  /* height: 6rem; */
   display: flex;
   overflow-x: scroll;
+  align-items: center;
   overflow-y: hidden;
+  /* background-color: red; */
   
 }
 
@@ -289,7 +298,7 @@ hr{
   height: 4px;
 }
 .category::-webkit-scrollbar-thumb {
-  background-color: rgb(27, 86, 91);
+  background-color: #1b565b;
   height: 2rem;
 }
 
@@ -372,13 +381,13 @@ hr{
 }
 
 .item{
-  min-width:300px;
-  max-width: 400px;
+  width:350px;
+  max-width: 490px;
   min-width: inherit;
   display:  flex;
   flex-direction: row;
   color: white;
-  gap: 20px;
+  gap: 1rem;
   border-bottom: 1px solid rgb(255, 255, 255,0.1);
   padding-bottom: 1rem;
   margin-bottom: 20px;
@@ -468,6 +477,7 @@ hr{
   left: 10px;
 }
 
+
 .siteNotice{
   max-width: 1200px;
   height: auto;
@@ -479,7 +489,7 @@ hr{
 
 }
 .siteNotice h3{
-  font-size: 2rem;
+  font-size: 1.5rem;
 }
 .siteNotice div{
 width: 90%;
@@ -509,7 +519,7 @@ margin-inline: auto;
   color: white;
   display: flex;
   justify-content: space-between;
-  border-bottom: white solid 1px;
+  border-bottom: rgb(143, 123, 123) solid 0.5px;
   flex-wrap: wrap;
   overflow: hidden;
 }
@@ -568,7 +578,7 @@ form{
   align-items: center;
   margin-inline: auto;
   width: 100%;
-  padding-top: 3rem;
+  /* padding-top: 3rem; */
   border-radius: 10px;
   
 }
@@ -696,9 +706,12 @@ transition: 0.5s;
 
 
 }
-@media screen and (width <=425px) {
+@media screen and (width <=470px) {
  html{
   font-size: 15px;
+ }
+ h1{
+  font-size: 2rem;
  }
  .foot{
   /* background-color: red; */

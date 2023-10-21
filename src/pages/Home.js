@@ -1,8 +1,7 @@
 import React from 'react';
 import '../App.css';
-import { useState } from 'react';
+import { useState, useEffect } from 'react';
 
-// import { SiteNotice } from '../components/components';
 
 function Home() {
  
@@ -20,6 +19,21 @@ function Home() {
 
   };
 
+ 
+// let Count = 45004
+const [adsCount, setAdsCount] = useState(898);
+
+  useEffect(() => {
+    const intervalId = setInterval(() => {
+      setAdsCount((prevAdsCount) => prevAdsCount + parseInt(10 * Math.random()) );
+    }, 1000); // Increment every 1 second
+
+    return () => {
+      clearInterval(intervalId); // Clean up the interval when the component unmounts
+    };
+  }, []);
+
+
 
 
   return (
@@ -27,8 +41,8 @@ function Home() {
         <div className='homePallet'>
             <div className="overlay"></div>
             <div className="homeFeatures">
-                <h1>ADS</h1>
-                <h3 style={{textAlign: "center", color: "orange", marginBottom: '1rem'}}>67548 Classified Ads available online</h3>
+                <h1>HANDY B & S</h1>
+                <h3 style={{textAlign: "center", color: "orange", marginBottom: '1rem'}}>  <h2  style={{display: 'inline', color: 'white', fontSize: '30px'}}>{adsCount}+</h2> CLASSIFIED ADS ONLINE</h3>
                 <div className="searchBar">
                     <input type="text" placeholder='Enter your search'/>
                     <h4 style={{color: 'white'}}>search</h4>

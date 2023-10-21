@@ -1,6 +1,7 @@
 import React, { useState, useEffect } from 'react';
 import { NavLink } from 'react-router-dom';
 import '../App.css'
+import logo from '../pages/handyLogo.png'
 // import { BrowserRouter as Router, Routes, Route } from 'react-router-dom'
 // import Login from '../pages/Login'
 // import Home from '../pages/Home'
@@ -63,7 +64,8 @@ function scrollToTop(){
   return (
     <div className="navbar">
       <div className="nav">
-        <h2 id='logo'>LOGO</h2>
+        {/* <h2 id='logo'>LOGO</h2> */}
+        <img src={logo} alt="" id='logo'/>
         <div className={isNavVisible ? 'hideMenu' : 'showMenu'} onClick={toggleNav}>
           <div className='top'></div>
           <div className='middle'></div>
@@ -168,7 +170,7 @@ export function Footer(){
         </div>
     </div>
     <hr />
-    <p style={{paddingBottom: "20px", textAlign: 'center'}}>&copy; 2023 ADS. All rights reserved . Designed by <em href='#' style={{color: 'orange', cursor:'pointer'}}>iFiX WEB TECH</em></p>
+    <p style={{paddingBottom: "15px", textAlign: 'center', fontSize: '12px', paddingTop: '5px'}}>&copy; 2023 ADS. All rights reserved . Designed by <em href='#' style={{color: 'orange', cursor:'pointer'}}>iFiX WEB TECH</em></p>
     </div>
 
   )
@@ -220,7 +222,7 @@ export function SiteNotice(){
   return(
     <div className="siteNotice">
       <div>
-      <h3>Buy and Sell your products and services on MY Ads</h3>
+      <h3>Buy & Sell your products and services on HANDY</h3>
       <p>
           Looking for a one-stop marketplace to buy, sell, rent, or discover used electronics, furniture, cars, movies, books, fashion, real estate, services, jobs, events , and more? Welcome to ADS, the largest collection of free classified ads in Ghana!
           With ADS, you get free user-to-user classified ads in all major cities. Post your ad at zero cost and explore an extensive selection of free classifieds. Your ad will reach a massive audience, and guess what? You can even upload captivating pictures or add a link to your website!
