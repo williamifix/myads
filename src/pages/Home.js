@@ -4,7 +4,7 @@ import { useState, useEffect } from 'react';
 
 
 function Home() {
- 
+ const [searchValue, setSearchValue]= useState('')
   const [isCategoryListingVisible, setCategoryListingVisibility] = useState(false);
 
   const toggleCategoryListing = () => {
@@ -33,6 +33,25 @@ const [adsCount, setAdsCount] = useState(898);
     };
   }, []);
 
+  const handleSearch=(e)=> {
+    e.preventDefault()
+    const targetPosition = document.querySelector('.homePallet').offsetHeight -50;
+    console.log(targetPosition+'hello')
+    window.scrollTo({
+       top: targetPosition,
+       behavior: 'smooth'
+    },
+    
+    );
+    if(searchValue){
+      document.querySelector('.lastestListing h2').innerHTML=('Results For '+ searchValue )
+    }
+    else{
+      document.querySelector('.lastestListing h2').innerHTML=('Latest Listings' )
+
+    }
+    setCategoryListingVisibility(true)
+ }
 
 
 
@@ -42,11 +61,21 @@ const [adsCount, setAdsCount] = useState(898);
             <div className="overlay"></div>
             <div className="homeFeatures">
                 <h1>HANDY B & S</h1>
-                <h3 style={{textAlign: "center", color: "orange", marginBottom: '1rem'}}>  <h2  style={{display: 'inline', color: 'white', fontSize: '30px'}}>{adsCount}+</h2> CLASSIFIED ADS ONLINE</h3>
-                <div className="searchBar">
-                    <input type="text" placeholder='Enter your search'/>
-                    <h4 style={{color: 'white'}}>search</h4>
-                </div>
+                <h3 style={{textAlign: "center", color: "orange", marginBottom: '1rem', fontSize:'1.3rem'}}>  <h2  style={{display: 'inline', color: 'white', fontSize: '30px'}}>{adsCount}+</h2> CLASSIFIED ADS ONLINE</h3>
+                {/* <div className="searchBar">
+                    <input type="text" placeholder='Enter your search' 
+                    value={searchValue}
+                    onChange={(e)=>setSearchValue(e.target.value)}
+                    />
+                    <h4 style={{color: 'white'}} onClick={handleSearch}>search</h4>
+                </div> */}
+                <form className="">
+                    <input required autoComplete='yes' type="text" placeholder='Enter your search' 
+                    value={searchValue}
+                    onChange={(e)=>setSearchValue(e.target.value)}
+                    />
+                    <button type='submit' style={{color: 'white'}} onClick={handleSearch}>search</button>
+                </form>
             </div>
         </div>
         <div className='Home'>

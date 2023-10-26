@@ -204,6 +204,58 @@ hr{
   border: 1px solid red;
 
 }
+.homeFeatures form{
+  width: 70%;
+  max-width: 600px;
+  height: 3.5rem;
+  display: flex;
+  justify-content: space-between;
+  padding-inline: 0.5rem;
+  align-items: center;
+  background-color: #0c0726;
+  border-radius: 0.5rem;
+  border: 1px solid rgb(255, 255, 255);
+  margin-top: 0px;
+}
+
+.homeFeatures form  input {
+  height: 2.5rem;
+  width: 400%;
+  border-radius: 0.5rem;
+  border-width: 0;
+  padding-inline: 1rem;
+  font-size: 1rem;
+}
+.homeFeatures form input:focus{
+  outline-width: 0px;
+
+}
+
+.homeFeatures form button{
+  width: 80px;
+  height: 100%;
+  color: white;
+  background-color: transparent;
+  padding-left: 1rem;
+  /* line-height: 1.6; */
+  font-size: 1rem;
+  margin: 0px;
+  padding-left: 20px;
+  
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 .searchBar {
   width: 70%;
@@ -571,7 +623,7 @@ margin-inline: auto;
 
 }
 
-form{
+.Login form{
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -582,7 +634,7 @@ form{
   border-radius: 10px;
   
 }
-form input{
+.Login  input{
   border-radius: 5px;
   width: 100%;
   border: 0px;
@@ -595,21 +647,21 @@ form input{
   outline-offset: 1px;
  
 }
-input:focus {
+.Login input:focus {
   outline-color: rgb(255, 170, 0);
   outline-width: 1px;
 }
- input::placeholder{
+ .Login input::placeholder{
   color: rgb(198, 197, 186);
 }
-textarea::placeholder{
+.Login textarea::placeholder{
   color: rgb(198, 197, 186);
 
 }
-input::-moz-focus-inner{
+.Login input::-moz-focus-inner{
   border: 0px;
 }
-form button {
+.Login form button {
   width: 90%;
 }
 .Login h1{
