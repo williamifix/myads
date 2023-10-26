@@ -43,6 +43,7 @@
     background-color: rgb(49, 85, 89,0.5);
     border-radius: 0.5rem;
     color: white;
+    resize: vertical;
 }
 textarea::placeholder {
     color: white;

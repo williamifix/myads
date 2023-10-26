@@ -22,8 +22,8 @@ function CreateListing() {
                 <input type="file" required/>
                 <input type="file" />
                 <input type="file" />
-                <h4>Category</h4>
-                <textarea type="text"  style={{height: '10rem', width: '100%', padding: '1rem', boxSizing:'border-box',lineHeight:'1.3rem', backgroundColor: '#babd9e33', color: '#ffffff' }}  placeholder='Give a description of your Listing'/>
+                <h4>Description</h4>
+                <textarea type="text"    placeholder='Give a description of your Listing'/>
                 <h4>Price</h4>
                 <input type="text" placeholder='Your Price in GHS' />
                 <div className='subscriptionType'>

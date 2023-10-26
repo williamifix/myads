@@ -22,7 +22,7 @@ export function Navbar() {
     const navList = document.querySelector('#navList');
 
     const handleResize = () => {
-      if (window.innerWidth > 696) {
+      if (window.innerWidth > 730) {
         navList.style.display = 'flex';
       } else {
         navList.style.display = 'none';
@@ -42,7 +42,7 @@ export function Navbar() {
 
 
     function hideNavRefresh(){
-      if ((window.innerWidth <= 696)&&(isNavVisible)) {
+      if ((window.innerWidth <= 730)&&(isNavVisible)) {
           setNavVisibility(false)      
         }
         scrollToTop();

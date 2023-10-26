@@ -8,7 +8,7 @@ form {
 form .subscriptionType{
     width: 100%;
     display: flex;
-    border: 1px solid;
+    border: 1px solid rgb(58, 105, 113);
     border-radius: 5px;
     margin-top: 1rem;
     align-items: center;
@@ -32,3 +32,18 @@ form .subscriptionType{
     padding: 0px;
     margin: 0px;
 }
+
+textarea{
+height: 10rem;
+width: 100%;
+padding: 1rem;
+box-sizing: border-box;
+line-height: 1.3rem;
+background-color: #babd9e33;
+color: white;
+resize: vertical;
+border-radius: 0.3rem;
+border: 0px;
+
+}
+/* style={{height: '10rem', width: '100%', padding: '1rem', boxSizing:'border-box',lineHeight:'1.3rem', backgroundColor: '#babd9e33', color: '#ffffff', resize: 'vertical' }} */

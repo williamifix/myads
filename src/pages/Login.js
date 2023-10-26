@@ -6,8 +6,8 @@ import { Link } from 'react-router-dom';
 
 
 function Login() {
-  const [email, setEmail] =useState('a')
-  const [password, setPassword] = useState('a')
+  const [email, setEmail] =useState('')
+  const [password, setPassword] = useState('')
   const loginData={
     email: email,
     password: password,

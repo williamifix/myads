@@ -1,35 +1,36 @@
 import React from 'react';
 import '../App.css';
 import { useState, useEffect } from 'react';
+import roundedDownArrow from './rounded-down.png'
+import producrImage from './download.jpeg'
 
 
 function Home() {
  const [searchValue, setSearchValue]= useState('')
-  const [isCategoryListingVisible, setCategoryListingVisibility] = useState(false);
+  const [isCategoryListingVisible, setCategoryListingVisibility] = useState(true);
 
   const toggleCategoryListing = () => {
     setCategoryListingVisibility(!isCategoryListingVisible);
     if(isCategoryListingVisible){
-      document.querySelector('.categoryListing span').innerHTML = '-'
+      document.querySelector('.categoryListing span ').style.transform = 'rotate(180deg)'
     }
     else{
-      document.querySelector('.categoryListing span').innerHTML = '+'
+      document.querySelector('.categoryListing span').style.transform = 'rotate(360deg)'
 
     }
 
   };
 
  
-// let Count = 45004
 const [adsCount, setAdsCount] = useState(898);
 
   useEffect(() => {
     const intervalId = setInterval(() => {
       setAdsCount((prevAdsCount) => prevAdsCount + parseInt(10 * Math.random()) );
-    }, 1000); // Increment every 1 second
+    }, 1000); 
 
     return () => {
-      clearInterval(intervalId); // Clean up the interval when the component unmounts
+      clearInterval(intervalId); 
     };
   }, []);
 
@@ -43,6 +44,7 @@ const [adsCount, setAdsCount] = useState(898);
     },
     
     );
+
     if(searchValue){
       document.querySelector('.lastestListing h2').innerHTML=('Results For '+ searchValue )
     }
@@ -79,10 +81,10 @@ const [adsCount, setAdsCount] = useState(898);
             </div>
         </div>
         <div className='Home'>
-        <div className='categoryListing'style={{height: isCategoryListingVisible? '2.6rem': '10.3rem'}} >
+        <div className='categoryListing'style={{height: isCategoryListingVisible? '3rem': '10.3rem'}} >
           <div className='heading'onClick={toggleCategoryListing}>
           <h3>Browse Listing by Category</h3>
-          <span>+</span>
+          <span id='browseListingToggleIcon'><img src={roundedDownArrow} alt="" /></span>
           </div>
 
           <div className="category">
@@ -161,36 +163,36 @@ const [adsCount, setAdsCount] = useState(898);
 
 
 
-export function CategoryListing(){
-    return(
-      <div className='categoryListing'>
-        <h3>Browse Listing by Category</h3>
-         <div className="category">
-          <CardItem/>
-          <CardItem/>
-          <CardItem/>
-          <CardItem/>
-          <CardItem/>
-          <CardItem/>
-          <CardItem/>
-          <CardItem/>
-          <CardItem/>
-          <CardItem/>
-          <CardItem/>
-          <CardItem/>
-          <CardItem/>
-          <CardItem/>
-          <CardItem/>
-          <CardItem/>
-          <CardItem/>
+// export function CategoryListing(){
+//     return(
+//       <div className='categoryListing'>
+//         <h3>Browse Listing by Category</h3>
+//          <div className="category">
+//           <CardItem/>
+//           <CardItem/>
+//           <CardItem/>
+//           <CardItem/>
+//           <CardItem/>
+//           <CardItem/>
+//           <CardItem/>
+//           <CardItem/>
+//           <CardItem/>
+//           <CardItem/>
+//           <CardItem/>
+//           <CardItem/>
+//           <CardItem/>
+//           <CardItem/>
+//           <CardItem/>
+//           <CardItem/>
+//           <CardItem/>
           
-         </div>
-          <div className="sideInfo">
-            <p>something is also here</p>
-          </div>
-      </div>
-    )
-  }
+//          </div>
+//           <div className="sideInfo">
+//             <p>something is also here</p>
+//           </div>
+//       </div>
+//     )
+//   }
   
   export function CardItem(){
     return(
@@ -243,7 +245,7 @@ export function CategoryListing(){
        
         <div className="item">
         <div className="imgContainer">
-          <img src={item.img} alt={"picture of ........."+item.name} />
+          <img src={producrImage} alt={"picture of ........."+item.name} />
         </div>
         <div className="itemDetails">
           <h3>{item.name}</h3>
