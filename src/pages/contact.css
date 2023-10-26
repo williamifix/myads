@@ -1,0 +1,50 @@
+.contactPallet {
+    /* background-color: red; */
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    gap: 5%;
+    max-width: 900px;
+    margin-top: 3rem;
+}
+
+.contactPallet >div{
+    /* background-color: blue; */
+    /* min-width: 250px; */
+    width: 300px;
+    /* max-width: 500px; */
+    padding: 1rem;
+}
+.contactDetails{
+    margin-bottom: 3rem;
+}
+.sendMessage{
+    border: 1px solid orange;
+    border-radius: 1rem;
+}
+.contactPallet p{
+    color: white;
+    text-align: left;
+}
+.contactDetails h2{
+    font-size: 1.4rem;
+    color: orange;
+}
+.contactPallet h3{
+ 
+}
+.contactPallet textarea {
+    width: 100%;
+    height: 8rem;
+    padding: 0.5rem;
+    box-sizing: border-box;
+    background-color: rgb(49, 85, 89,0.5);
+    border-radius: 0.5rem;
+    color: white;
+}
+textarea::placeholder {
+    color: white;
+}
+

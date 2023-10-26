@@ -9,8 +9,8 @@ function CreateListing() {
   return (
     <div className='Login'>
         <div className='signInPallet'>
-          <h1>+ New Listing</h1>
-          <p>THIS ISTHE LISTING PAGE</p>
+          <h1>+1 New Listing</h1>
+          <p></p>
           <div className="CreateListingPallet">
             <form action="" >
                 <h2>Product Details</h2>
